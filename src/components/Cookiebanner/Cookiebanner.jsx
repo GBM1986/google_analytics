@@ -10,7 +10,7 @@ const [showBanner, setShowBanner] = useState(true);
 useEffect(() => {
     if (!localStorage.getItem("cookiebanner")) {
         setShowBanner(true);
-        // ReactGA.intialize("")
+        ReactGA.intialize("G-J3JWPMZ548")
     }
 }, [showBanner]);
 
