@@ -3,6 +3,7 @@ import { Layout } from "../layout/Layout";
 import { About } from "../pages/About";
 import { Home } from "../pages/Home";
 import { Gallery } from "../pages/Gallery";
+import { Cookiebanner } from "../components/Cookiebanner/Cookiebanner";
 
 
 export const routes = createHashRouter([
@@ -22,6 +23,10 @@ export const routes = createHashRouter([
                 path: "gallery",
                 element: <Gallery />,
             },
+            {
+                path: "Cookiebanner",
+                element: <Cookiebanner />,
+            }
         ],
     },
 ]);

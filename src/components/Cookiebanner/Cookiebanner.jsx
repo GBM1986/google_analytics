@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import style from "../Cookiebanner";
+import style from "../Cookiebanner/Cookiebanner.module.scss";
 import ReactGA from 'react-ga4';
 
 export const Cookiebanner = () => {
@@ -10,7 +10,7 @@ const [showBanner, setShowBanner] = useState(true);
 useEffect(() => {
     if (!localStorage.getItem("cookiebanner")) {
         setShowBanner(true);
-        ReactGA.intialize("")
+        // ReactGA.intialize("")
     }
 }, [showBanner]);
 
@@ -41,8 +41,8 @@ const accept = () => {
             Learn more
             </a>
         </p>
-        <button onClick={accept}> Accept</button>
-        <button onClick={deny}> Deny</button>
+        <button onClick={() => accept()}>Accepter</button>
+        <button onClick={() => deny()}>Afslå</button>
         </div>
     </div>
     )}
