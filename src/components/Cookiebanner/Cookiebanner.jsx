@@ -29,7 +29,7 @@ const accept = () => {
   return (
     <>  
     {showBanner && (
-    <div className="cookiebanner">
+    <div class={style.cookiebanner} id="cookiebanner">
         <div className="content">
         <p>
             This website uses cookies to enhance the user experience.{" "}
