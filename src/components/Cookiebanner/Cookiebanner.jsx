@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import style from "../Cookiebanner/Cookiebanner.module.css";
+import style from "../Cookiebanner";
 import ReactGA from 'react-ga4';
 
 export const Cookiebanner = () => {
